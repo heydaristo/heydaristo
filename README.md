@@ -85,13 +85,13 @@ const heydaristo = {
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=heydaristo&theme=tokyonight&hide_border=true&show_icons=true" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=heydaristo&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&layout=compact" height="165"/>
+<img src="https://github-readme-stats.vercel.app/api?username=heydaristo&theme=tokyonight&hide_border=true&show_icons=true" height="165"/>
 
-<img src="https://streak-stats.demolab.com?user=heydaristo&theme=tokyonight&hide_border=true" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=heydaristo&theme=tokyonight&hide_border=true&layout=compact" height="165"/>
+
+<img src="https://streak-stats.demolab.com?user=heydaristo&theme=tokyonight&hide_border=true" width="49%"/>
 
 </div>
-
 ---
 
 ## 🏆 GitHub Trophies
