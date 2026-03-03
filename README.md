@@ -85,12 +85,9 @@ const heydaristo = {
 
 <div align="center">
 
-<img src="https://streak-stats.demolab.com/?user=heydaristo&theme=tokyonight&hide_border=true" width="49%"/>
 <img src="https://github-readme-streak-stats-eight.vercel.app/?user=heydaristo&theme=tokyonight&hide_border=true" width="49%"/>
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=heydaristo&theme=tokyonight&hide_border=true" width="49%"/>
 
 </div>
----
 
 ## 🏆 GitHub Trophies
 
