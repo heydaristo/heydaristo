@@ -138,7 +138,7 @@ const heydaristo = {
 ☕ Coffee consumed  : ∞ cups
 🌙 Best coding hour : 23:00 - 03:00
 🎌 Current watching : ???
-🎯 2025 goal        : Ship more, sleep less (maybe)
+🎯 2026 goal        : Ship more, sleep less (maybe)
 ```
 
 </div>
