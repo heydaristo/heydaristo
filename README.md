@@ -1,9 +1,56 @@
+#!/bin/bash
+
+# ╔══════════════════════════════════════════╗
+# ║     HEYDARISTO — GIT FIX ALL SCRIPT     ║
+# ║  Jalankan dari: /var/www/heydaristo      ║
+# ╚══════════════════════════════════════════╝
+
+GREEN='\033[0;32m'
+CYAN='\033[0;36m'
+RED='\033[0;31m'
+YELLOW='\033[1;33m'
+NC='\033[0m'
+BOLD='\033[1m'
+
+echo ""
+echo -e "${CYAN}╔══════════════════════════════════════════╗${NC}"
+echo -e "${CYAN}║     HEYDARISTO — GIT FIX ALL SCRIPT     ║${NC}"
+echo -e "${CYAN}╚══════════════════════════════════════════╝${NC}"
+echo ""
+
+# ─── STEP 1: PERSONAL-WEB ───────────────────
+echo -e "${BOLD}${YELLOW}[1/4] Fix & Push: personal-web${NC}"
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+
+cd /var/www/heydaristo || { echo -e "${RED}❌ Folder tidak ditemukan: /var/www/heydaristo${NC}"; exit 1; }
+
+git add .
+git commit -m "feat: add portfolio website with cyberpunk theme" 2>/dev/null || echo -e "${YELLOW}⚠️  Tidak ada perubahan baru untuk di-commit${NC}"
+
+git branch -M main
+
+echo -e "${GREEN}✅ Force push personal-web ke GitHub...${NC}"
+git push origin main --force
+
+echo ""
+echo -e "${GREEN}✅ personal-web berhasil di-push!${NC}"
+echo ""
+
+# ─── STEP 2: PROFILE README ─────────────────
+echo -e "${BOLD}${YELLOW}[2/4] Setup: Profile README (heydaristo/heydaristo)${NC}"
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+
+mkdir -p /tmp/gh-profile
+cd /tmp/gh-profile
+
+git init
+git remote add origin https://github.com/heydaristo/heydaristo.git 2>/dev/null || git remote set-url origin https://github.com/heydaristo/heydaristo.git
+
+cat > README.md << 'README'
 <div align="center">
 
-<!-- HEADER BANNER -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Heydaristo&fontSize=56&fontColor=fff&animation=twinkling&fontAlignY=36&desc=Developer%20%7C%20Bot%20Creator%20%7C%20Anime%20Enthusiast&descSize=16&descAlignY=58&descColor=aaaaff" width="100%"/>
 
-<!-- TYPING ANIMATION -->
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=1000&color=00E5FF&center=true&vCenter=true&width=600&lines=Hey+there!+I'm+Heydaristo+%F0%9F%91%8B;Developer+%26+Bot+Creator+from+Indonesia+%F0%9F%87%AE%F0%9F%87%A9;Building+cool+things+since+2021+%E2%9A%A1;Open+for+freelance+%26+collab+%F0%9F%9A%80)](https://git.io/typing-svg)
 
 <br/>
@@ -138,7 +185,7 @@ const heydaristo = {
 
 ```
 ☕ Coffee consumed  : ∞ cups
-🌙 Best coding hour : 23:00 - 03:00  
+🌙 Best coding hour : 23:00 - 03:00
 🎌 Current watching : ???
 🎯 2025 goal        : Ship more, sleep less (maybe)
 ```
